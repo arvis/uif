@@ -4,10 +4,10 @@ var FormInputItem=React.createClass({
   render:function() {
     return (
 
-    <div class="form-group">
-      <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-      <div class="col-sm-10">
-        <input type="input" class="form-control" id="inputEmail3" placeholder="Email" />
+    <div className="form-group">
+      <label for="inputEmail3" className="col-sm-2 control-label">Email</label>
+      <div className="col-sm-10">
+        <input type="input" className="form-control" id="inputEmail3" placeholder="Email" />
       </div>
     </div>      
 
@@ -19,9 +19,17 @@ var FormInputItem=React.createClass({
 var FormBox = React.createClass({
   render: function() {
     return (
-      <form class="form-horizontal" role="form">
-        <FormInputItem />
-      </form>
+
+        <form className="form-horizontal" role="form">
+
+            < FormInputItem />
+
+            <button type="submit" className="btn btn-primary">Apply</button>&nbsp;
+            <button type="button" className="btn">Reset</button>
+        </form>
+
+
+
     );
   }
 });
