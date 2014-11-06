@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>A bit like form builder</title>
+    <script src="build/react.js"></script>
+    <script src="build/JSXTransformer.js"></script>  
+
+<link rel="stylesheet" href="build/bootstrap.css">
+<script src="build/bootstrap.js"></script>
+
+  </head>
+
+  <body>
+    <h1>Hello, world!</h1>
+    <div id="content"></div>
+
+    <script type="text/jsx" src="form.js"></script>
+
+    <script type="text/jsx">
+      React.render(
+        <FormBox />,
+        document.getElementById('content')
+      );
+    </script>
+
+
+  </body>
+</html>
