@@ -5,7 +5,7 @@ var FormInputItem=React.createClass({
     return (
 
     <div className="form-group">
-      <label for="inputEmail3" className="col-sm-2 control-label">Email</label>
+      <label htmlFor="inputEmail3" className="col-sm-2 control-label">Email</label>
       <div className="col-sm-10">
         <input type="input" className="form-control" id="inputEmail3" placeholder="Email" />
       </div>
