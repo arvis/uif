@@ -163,8 +163,11 @@ body {
     <script type="text/jsx" src="javascripts/form.js"></script>
 
     <script type="text/jsx">
+    var data=[{name:'text_data', label:'Generated data', type:'input'},
+      {name:'text_data2', label:'Gen data2', type:'input'}];
+
       React.render(
-        <FormBox />,
+        <FormBox data={data} />,
         document.getElementById('content')
       );
     </script>
