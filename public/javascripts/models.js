@@ -10,10 +10,13 @@ var TextField=function TextField(name){
 
 
 var TextField =function(field_name) {
+	if (!field_name){
+		field_name="text_1";
+	}
+
     this.field_name = field_name;
-    this.color = "red";
 	this.render = function() {
-	        return "text field "+this.field_name;
+	        return '<input type="text" name="'+this.field_name+'"/>';
 	    };
 	}
 
