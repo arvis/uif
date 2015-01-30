@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script src="javascripts/support/jquery-1.11.1.min.js"></script>
-<script src="javascripts/models.js"></script>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="stylesheets/support/bootstrap.css">
+
+    <script src="javascripts/support/react.js"></script>
+    <script src="javascripts/support/JSXTransformer.js"></script>  
+    <script src="javascripts/support/jquery-1.11.1.min.js"></script>
+    <script src="javascripts/support/bootstrap.js"></script>
+    <script src="javascripts/support/require.js"></script>
+
+    <script src="javascripts/support/jquery-1.11.1.min.js"></script>
+    <script src="javascripts/models.js"></script>
+
+    <script type="text/jsx" src="javascripts/form.js"></script>
 
 
 <script>
-
-	console.log(Employee.firstName.render() );
-
+    console.log(Employee.firstName.render() );
 </script>
+
+    <script type="text/jsx">
+        var table_data=[ [{value:'111',type:'integer'},{value:'222',type:'integer'},{value:'333',type:'integer'},{value:'444',type:'integer'}] ];
+
+
+    </script>
+
 
 </head>
 <body>
 
 This will be models based view
+
+<div id="area"></div>
 
 </body>
 </html>

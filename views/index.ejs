@@ -12,6 +12,8 @@
     <script src="javascripts/support/JSXTransformer.js"></script>  
     <script src="javascripts/support/jquery-1.11.1.min.js"></script>
     <script src="javascripts/support/bootstrap.js"></script>
+    <script src="javascripts/support/require.js"></script>
+    
 
 <style type="text/css">
 body {
@@ -151,11 +153,13 @@ body {
             <li><a href="#">Export</a></li>
           </ul>
         </div>
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Form title</h1>
+          <div class="row" id="grid_area"></div>
+        </div>
 
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <div class="row" id="content"></div>
-
         </div>
       </div>
     </div>
@@ -166,10 +170,21 @@ body {
     var data=[{name:'text_data', label:'Generated data', type:'input'},
       {name:'text_data2', label:'Gen data2', type:'input'}];
 
+      var table_data=[ [{value:'111',type:'integer'},{value:'222',type:'integer'},{value:'333',type:'integer'},{value:'444',type:'integer'}] ];
+
+      /*
       React.render(
         <FormBox data={data} />,
         document.getElementById('content')
       );
+      */
+
+
+      React.render(
+        <DataGrid data={table_data} />,
+        document.getElementById('grid_area')
+      );
+
     </script>
 
 
