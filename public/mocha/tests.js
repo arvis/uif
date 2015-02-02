@@ -24,3 +24,14 @@ describe("TextField", function() {
     });
   });
 });
+
+
+describe("TextField", function() {
+ 
+  describe("render", function() {
+    it("should render basic textbox", function() {
+      var render = (new TextField("my")).render();
+      expect(render).to.equal('<input type="text" name="my"/>');
+    });
+  });
+});
