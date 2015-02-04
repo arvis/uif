@@ -30,10 +30,19 @@ var TableRow = React.createClass({
 
 
 var TableCell = React.createClass({
-  render: function() {
 
+  handleDoubleClick: function(event) {
+      console.log( this.props.children );
+      var OriginalContent = $(this.getDOMNode()).text();
+      $(this.getDOMNode()).html("<input type='text' value='" + OriginalContent + "' />");
+      $(this.getDOMNode()).children().first().focus();
+      
+      //this.html("<input type='text' value='" + OriginalContent + "' />");
+  },
+
+  render: function() {
     return (
-      <td>{this.props.children}</td>
+      <td onDoubleClick={this.handleDoubleClick}>{this.props.children}</td>
     );
   }
 });
